@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guessing game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+      body {
+      margin: 10px auto;
+      width: 80%;
+      border: 3px solid #e0d6ce;
+      padding: 10px;
+      text-align: center;
+      font-size: 1.1em;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+    }
+    #play {
+      background-color: yellow;
+    }
+
+  .center {
+  margin: 10px auto;
+  width: 80%;
+  border: 3px solid #e0d6ce;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1em;
+}
+    </style>
+  </head>
+
+  <body class='center'>
+    <h1>Number Guessing Game</h1>
+    <p id ='title'></p> <br>
+      <p>Guess the correct number to win this Pastry.</p>
+    <img src="./images/pasteis.jpg" alt="pastry" width=50 height=50> <br>
+
+      <label for="userGuess">Enter a guess:</label>
+      <input type="number" id='userGuess' name='userGuess'>
+    <button value='submitGuessButton' id='submitBtn'>Play</button>
+
+    <section id='message'>
+     <div id='messageBoard'></div>
+    </section>
+    <hr>
+
+    <!-- ROCK PAPER SCISSORS -->
+
+    <h1>Rock Paper Scissors</h1>
+    <div id='game-area'>Pick: </div>
+
+    <section>
+      <button id='rock' class='btnChoice'>rock</button>
+      <button id='paper' class='btnChoice'>paper</button>
+      <button id='scissors' class='btnChoice'>scissors</button>
+    </section>
+      
+      <button id='play' value='play'>Play</button>
+
+      <p id='msg'></p>
+    
+    <script src="./script.js" async defer></script>
+    <script src="./rock.js" async defer></script>
+
+  </body>
+</html>
